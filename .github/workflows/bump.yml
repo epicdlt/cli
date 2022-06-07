@@ -3,7 +3,7 @@ name: Bump Version Tag
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
