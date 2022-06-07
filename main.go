@@ -409,7 +409,7 @@ func GetCodeState(ctx context.Context, rpcURL, key, path string, pretty bool) {
 	url := rpcURL + "/addr/" + key + "/state" + path
 	fmt.Println("url:", url)
 
-	resp := &client.CodeStateResponse{}
+	resp := &models.CodeStateResponse{}
 	err := gotils.GetJSON(url, resp)
 	if err != nil {
 		fatalExit(err)
